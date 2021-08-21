@@ -1,0 +1,8 @@
+<p>formarray works!</p>
+
+<form [formGroup]="simpleform" (ngSubmit)="getdata()">
+    <input type="text"   minlength="5" maxlength="10" formControlName="username" name="username"> <br> <br>
+    <input type="password" formControlName="password" name="password">  <br> <br>
+ 
+    <button type="submit" [disabled]="!simpleform.valid" >submit</button>
+</form> 

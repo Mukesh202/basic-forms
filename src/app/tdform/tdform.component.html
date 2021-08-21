@@ -1,0 +1,22 @@
+<p>tdform works!</p>
+
+<div class="container">
+    
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+<div class="form-group">
+    <label for="username"> username</label> <br>
+    <input type="text" name="username" #fname="ngModel" required minlength="10"  ngModel >
+    
+<!-- <div *ngIf="!username?.valid && (username?.dirty || username?.touched)">
+    Invalid user Name
+ </div> -->
+</div> <br>
+
+<div class="form-group">
+    <label for="password"> password</label> <br>
+    <input type="text" name="password" #fname="ngModel" required maxlength="13" placeholder="password" ngModel >
+</div>
+<br>
+<button type="submit" class="btn btn-danger" >Submit</button>
+</form>
+</div>

@@ -1,0 +1,41 @@
+<p>reactiveform works!</p>
+ <div class="form-group">
+    <label for="username">username</label> <br>
+    <input type="text" name="username" [formControl]="username" formControlName="username"><br>
+</div>
+<div class="form-group">
+    <label for="password">password</label> <br>
+    <input type="password" name="password" [formControl]="password" formControlName="username">
+</div>
+<div class="form-group">
+    <label for="text">email</label> <br>
+    <input type="email" name="email" [formControl]="email" formControlName="email"> <br>
+</div>
+<div class="form-group">
+    <label for="text">adress</label> <br>
+    <input type="adress" name="adress" [formControl]="adress" formControlName="adress"> <br>
+</div>
+<div class="form-group">
+    <label for="text">pin code</label> <br>
+    <input type="pincode" name="pincode" [formControl]="pincode" formControlName="pincode"> <br>
+</div> <br> <br>
+<div>
+    <button class="btn btn-lg btn-primary" type="submit" (click)="collectData()">OnSubmit</button>
+</div> 
+
+<div class="form-group">
+    <label for="companyname">companyname</label> <br> <br>
+    <input type="text" name="companyname" [formControl]="companyname" formCcontrolName="companyname"> <br> <br>
+</div>
+<div class="form-group">
+    <label for="policyname">policyname</label> <br> <br>
+    <input type="text" name="policyname" [formControl]="policyname" formCcontrolName="policyname"> <br> <br>
+</div>
+<div class="form-group">
+    <label for="attachment">attachment</label> <br> <br>
+    <input type="text" name="attachment" [formControl]="attachment" formCcontrolName="attachment"> <br> <br>
+</div>
+<div> 
+    <button type="submit" (click)="collectData()"> submit</button> </div> 
+
+    

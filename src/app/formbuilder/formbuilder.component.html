@@ -1,0 +1,57 @@
+<p>formbuilder works!</p>
+
+<form [formGroup]="simpleform" (ngSubmit)="onSubmit()">
+
+    <input type="text" name="username" formControlName="username"> <br> <br>
+    <input type="password" name="password" formControlName="password"> <br> <br>
+
+    <button type="submit" [disabled]="!simpleform.valid" >submit</button>
+</form> -->
+
+<!-- 
+<form [formGroup]="contactform" (ngSubmit)="getdata()">
+    <label for="name">username</label> <br> <br>
+    <input type="text" name="username" formControlName="username" >  <br> <br>
+    <label for="password">password</label> <br> <br>
+    <input type="password" name="password" formControlName="password"> <br> <br>
+</form> -->
+<!-- <br> <br>
+<form [formGroup]="contactform" (ngSubmit)="collectdata()">
+
+    <input type="text" name="companyname" formControlName="companyname"> <br> <br>
+    <input type="password" name="password" formControlName="policyname"> <br><br>
+
+    <button class="btn btn-primary" type="submit" [disabled]="!contactform.valid" >submit</button>
+
+</form> -->
+
+<!-- <table>
+    <tr>
+        <div class="form-group" formArrayName="user" >
+            <label for=""> user</label>
+            <div *ngFor="let control of addLoanTypeForm.controls.users['controls']; i=index;" [formGroupName]="i">
+                <input type="text" formControlName="name"> <br>
+                <input type="text" formControlName="age"> <br>
+                <input type="text" formControlName="dept.">
+            </div>
+        </div>
+    </tr>
+</table> -->
+
+<!-- <button (click)="addLoanType()" [disabled]="!addLoanTypeForm.valid" > Add Loan Type</button> -->
+
+
+<!-- <form [formGroup]="addLoanTypeForm">
+
+<div class="form-group" >
+    <label for=""> Loan Name</label>
+    <input type="text" formControlName="loanName">
+</div>
+
+    <input type="text" formControlName="loanName">
+    <input type="text" formControlName="loanType">
+
+    <button (click)="addLoanType()" [disabled]="!addLoanTypeForm.valid" ></button>
+
+
+</form> -->
